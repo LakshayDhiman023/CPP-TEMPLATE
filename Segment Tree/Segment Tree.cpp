@@ -32,7 +32,7 @@ class SGTree{
             int mid = (l + r) /2;
             int lt = query(2 * ind + 1, left, right, l, mid);
             int rt = query(2 * ind + 2, left, right, mid + 1, r);
-            return segTree[ind] = max(lt, rt);
+            return max(lt, rt);
         }
 
         void update(int ind, int l, int r, int idx, int val){
@@ -42,8 +42,10 @@ class SGTree{
                 return;
             }
             int mid = (l + r) / 2;
-            update(2 * ind + 1, l, mid, idx, val);
-            update(2 * ind + 2, mid + 1, r, idx, val);
+            if(idx <= mid)
+                update(2 * ind + 1, l, mid, idx, val);
+            else
+                update(2 * ind + 2, mid + 1, r, idx, val);
             segTree[ind] = max(segTree[2 * ind + 1], segTree[2 * ind + 2]);
         }
 };
