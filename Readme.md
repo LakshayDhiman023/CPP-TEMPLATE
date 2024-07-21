@@ -12,5 +12,5 @@
 4. Precomputation Techniques\
     4.1. 2d prefix array
 5. Fenwick Tree
-6. Cpp Functions
+6. Cpp Functions/
     6.1 Partail_Sum to find the prefix sum 
