@@ -8,9 +8,9 @@
     3.2. Bridges in Graph\
     3.3. floyd_warshall to find min distance between any two vertex in graph\
     3.4. prims algo to find mst\
-    3.5. Dijkstra (single source shortest distance)\
+    3.5. Dijkstra (single source shortest distance)
 4. Precomputation Techniques\
-    4.1. 2d prefix array\
+    4.1. 2d prefix array
 5. Fenwick Tree
 6. Cpp Functions
     6.1 Partail_Sum to find the prefix sum 
